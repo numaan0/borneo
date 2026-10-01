@@ -1,0 +1,32 @@
+{
+  "name": "@borneo/desktop",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Electron desktop shell for the iPhone 8 repair workstation",
+  "main": "dist/main/index.cjs",
+  "scripts": {
+    "dev": "node scripts/build.mjs && concurrently -k -n vite,electron \"vite\" \"electron .\"",
+    "build": "node scripts/build.mjs && vite build",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@borneo/domain": "workspace:*",
+    "@borneo/parsers": "workspace:*",
+    "@borneo/rendering": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/node": "^22.10.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.0",
+    "electron": "^33.3.1",
+    "esbuild": "^0.28.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "scheduler": "^0.25.0",
+    "typescript": "^7.0.2",
+    "vite": "^6.0.7"
+  }
+}

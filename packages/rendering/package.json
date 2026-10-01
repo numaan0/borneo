@@ -1,0 +1,16 @@
+{
+  "name": "@borneo/rendering",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Canvas board renderer with camera-transform stack, hit-testing, highlighting",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@borneo/domain": "workspace:*"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@borneo/ui",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Reusable diagnostic-workspace UI (panels, tables, search, diagnostics)",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@borneo/domain": "workspace:*"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

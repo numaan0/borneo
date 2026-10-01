@@ -1,0 +1,13 @@
+{
+  "name": "@borneo/domain",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Normalized, vendor-independent repair-workstation domain model",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

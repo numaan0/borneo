@@ -1,0 +1,27 @@
+HEADER_DATA_START
+OBDATA_V002 https://openboarddata.org
+TIMESTAMP 1790272538
+BOARDPATH phones/apple/ip8_qualcomm
+ID ip8_qualcomm
+BRAND apple
+CATEGORY phones
+COMMENT 
+HEADER_DATA_END
+### Released under the OBbL - https://opendatacommons.org/licenses/odbl/1-0/
+DIAGNOSIS_DATA_START
+DIAGNOSIS_DATA_END
+
+COMPONENTS_DATA_START
+### Component Category Value Comment
+### v = value, p = package, c = manufacturer code, r = rating, m = misc, s = status
+###
+COMPONENTS_DATA_END
+
+NETS_DATA_START
+### Network Valuetype Value Comment
+### d = diode, v = voltage, r = resistance, a = alias, t = net comment
+###
+
+NETS_DATA_END
+
+### END

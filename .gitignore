@@ -1,0 +1,53 @@
+# dependencies — unanchored so nested workspace + pnpm store dirs are covered
+node_modules/
+.pnpm-store/
+
+# build output
+dist/
+out/
+build/
+release/
+
+# tool caches
+.vite/
+.turbo/
+.cache/
+coverage/
+*.tsbuildinfo
+*.tsbuildinfo.json
+
+# env / local secrets
+.env
+.env.local
+.env.*.local
+*.local
+
+# raw licensed datasets — re-fetch via scripts/fetch-licensed-fixtures.ps1
+# keep provenance READMEs committed, ignore the large binary fixture files
+**/data/raw/*
+!**/data/raw/README.md
+!**/data/raw/**/README.md
+
+# generated artifacts
+*.sqlite3
+*.sqlite3-journal
+*.obdq
+*.obdlocal
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# editors — **/ so nested workspace packages are covered too
+**/.vscode/*
+!**/.vscode/extensions.json
+**/.idea/
+*.swp

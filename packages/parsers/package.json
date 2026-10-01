@@ -1,0 +1,16 @@
+{
+  "name": "@borneo/parsers",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Vendor-specific format importers that normalize into the domain model",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@borneo/domain": "workspace:*"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #1b1d22;
+  color: #d6d9de;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  position: relative;
+  background: #23262e;
+  border-bottom: 1px solid #33363f;
+}
+
+.btn {
+  background: #2b6cb0;
+  border: 1px solid #2b6cb0;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #2f7acc;
+}
+
+.search {
+  width: 280px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #33363f;
+  background: #1b1d22;
+  color: #d6d9de;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.board-name {
+  color: #8a90a0;
+  font-size: 13px;
+}
+
+.error-strip {
+  background: #7c2d2d;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.warn-strip {
+  background: #7c622d;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.workspace {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.canvas-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  background: #141519;
+  overflow: hidden;
+}
+
+.canvas-wrap canvas {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: crosshair;
+}
+
+.inspector {
+  width: 320px;
+  border-left: 1px solid #33363f;
+  overflow: auto;
+  padding: 12px;
+  background: #1f2229;
+}
+
+.hint {
+  color: #8a90a0;
+  font-size: 13px;
+}
+
+.inspector-content h2 {
+  margin: 0 0 8px;
+}
+
+.inspector-content h3 {
+  margin: 16px 0 6px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #8a90a0;
+}
+
+.kv {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 4px 8px;
+  font-size: 13px;
+  margin: 0;
+}
+
+.kv dt {
+  color: #8a90a0;
+}
+
+.kv dd {
+  margin: 0;
+  word-break: break-word;
+}
+
+.pad-net {
+  font-size: 13px;
+  margin: 2px 0;
+}
+
+.pad-ref {
+  color: #8a90a0;
+  font-family: monospace;
+}
+
+.net-name {
+  color: #9bdcfe;
+  font-family: monospace;
+}
+
+.net-stats {
+  font-size: 13px;
+  margin: 2px 0;
+  color: #b6bac2;
+}
+
+.search-results {
+  position: absolute;
+  top: 40px;
+  z-index: 10;
+  max-height: 300px;
+  overflow: auto;
+  background: #23262e;
+  border: 1px solid #33363f;
+  border-radius: 4px;
+}
+
+.result-row {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: #d6d9de;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.result-row:hover {
+  background: #2b6cb0;
+}
+
+.result-net {
+  color: #9bdcfe;
+  font-family: monospace;
+}

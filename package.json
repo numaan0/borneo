@@ -1,0 +1,18 @@
+{
+  "name": "borneo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "iPhone 8 repair workstation — workspace root (MVP, one-device-first)",
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "verify": "tsx scripts/verify-rendering.ts && tsx scripts/verify-renderer.ts && tsx scripts/verify-index.ts && tsx scripts/verify-connectivity.ts",
+    "typecheck": "pnpm recursive --filter @borneo/* typecheck"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
